@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global resets and font smoothing */
+body {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(62, 62, 62);
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Utility overrides */
+.hidescroll {
+  overflow: hidden !important;
+}
+.display {
+  opacity: 1 !important;
+}
+
+/* Video background utility */
+video {
+  @apply absolute top-0 w-full h-screen object-cover -z-10;
+}
+
+/* Header dark overlay */
+.headerbg {
+  @apply absolute w-full h-screen z-0 top-0 bg-black opacity-70;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  header h1 {
+    @apply text-center text-4xl;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar ul {
+    @apply backdrop-blur-lg z-[-1] absolute top-0 left-0 h-screen w-full list-none p-0 text-center m-0 pt-40 -translate-x-full;
+  }
+}
+
+/* Zeal Fabrication Branding (Orange theme) */
+.text-zeal {
+  @apply text-[#f5831e]; /* Zeal Orange */
+}
+.bg-zeal {
+  @apply bg-[#f5831e];
+}
+.border-zeal {
+  @apply border-[#f5831e];
+}
+.hover\:text-zeal:hover {
+  @apply text-[#f5831e];
+}
+.hover\:bg-zeal:hover {
+  @apply bg-[#f5831e];
+}
+
+/* Additional utilities */
+.logo-shadow {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}

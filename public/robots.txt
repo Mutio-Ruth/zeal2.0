@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://panframltd.co.ke
+
+# Sitemaps
+Sitemap: https://panframltd.co.ke/sitemap.xml
