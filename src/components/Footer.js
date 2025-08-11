@@ -1,12 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  MessageCircle,
-} from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -19,7 +14,9 @@ const Footer = () => {
               Zeal Fabrication And Welding
             </h3>
             <p className="text-gray-300">
-              Specialists in custom metal fabrication and industrial welding. Trusted by contractors, builders, and manufacturers across the region.
+              Specialists in custom metal fabrication and industrial welding.
+              Trusted by contractors, builders, and manufacturers across the
+              region.
             </p>
           </div>
 
@@ -29,11 +26,46 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              <li><Link href="/" className="text-gray-300 hover:text-orange-400">Home</Link></li>
-              <li><Link href="/about" className="text-gray-300 hover:text-orange-400">About</Link></li>
-              <li><Link href="/services" className="text-gray-300 hover:text-orange-400">Services</Link></li>
-              <li><Link href="/projects" className="text-gray-300 hover:text-orange-400">Projects</Link></li>
-              <li><Link href="/contact" className="text-gray-300 hover:text-orange-400">Contact</Link></li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-300 hover:text-orange-400"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-gray-300 hover:text-orange-400"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="text-gray-300 hover:text-orange-400"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/projects"
+                  className="text-gray-300 hover:text-orange-400"
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-orange-400"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -44,10 +76,20 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/help-center" className="text-gray-300 hover:text-orange-400">Help Center</Link>
+                <Link
+                  href="/help-center"
+                  className="text-gray-300 hover:text-orange-400"
+                >
+                  Help Center
+                </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-gray-300 hover:text-orange-400">FAQ</Link>
+                <Link
+                  href="/faq"
+                  className="text-gray-300 hover:text-orange-400"
+                >
+                  FAQ
+                </Link>
               </li>
             </ul>
           </div>
@@ -72,7 +114,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <MessageCircle className="w-5 h-5 text-green-400 mr-2" />
-                WhatsApp: Chat with us
+                <Link
+                  href="https://wa.me/254790587967"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-green-300"
+                >
+                  WhatsApp: Chat with us
+                </Link>
               </li>
             </ul>
           </div>
@@ -81,7 +130,8 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-700 mt-12 pt-6 text-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Zeal Fabrication And Welding. All rights reserved.
+            © {new Date().getFullYear()} Zeal Fabrication And Welding. All
+            rights reserved.
           </p>
         </div>
       </div>
